@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { JosefinSans } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import React from "react";
-const inter = JosefinSans({ subsets: ["latin"] });
+const JosefinSans = Josefin_Sans({ subsets: ["vietnamese"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={JosefinSans.className}>
       <Header />
       {children}
       <Footer />

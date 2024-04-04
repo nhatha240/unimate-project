@@ -1,3 +1,25 @@
 .footer {
 
+  .footer-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 0 20px 100px 20px;
+    .footer-info-name-shop{
+      color: #436CFF;
+      font-family: Montserrat;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+    .footer-shop-info{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      align-self: stretch;
+    }
+  }
 }
