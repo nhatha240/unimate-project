@@ -12,10 +12,10 @@ import {black} from "next/dist/lib/picocolors";
 
 export default function MobileHeader() {
     return (
-        <header className="header max-lg:block w-dvw ">
+        <header className="header md:hidden w-dvw ">
             <div className="mobile-header w-dvw ">
                     <div className="w-dvw h-[30px] px-5 py-2.5 bg-blue-900 justify-start items-center gap-2.5 inline-flex mobile-banner">
-                        <div className="justify-center items-center gap-1.5 flex">
+                        <div className="max-w-screen-sm justify-center items-center gap-1.5 flex">
                             <div className="w-3.5 h-3.5 relative"><Image alt={`menu`} src={Shield} width={32} height={32}/></div>
                             <div className="text-center">
                                 <span className="ratio-banner">100% </span>

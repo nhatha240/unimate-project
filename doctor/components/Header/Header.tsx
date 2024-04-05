@@ -9,7 +9,7 @@ export type HeaderProps = {}
 export default function Header({}: HeaderProps) {
     const {isTablet, isDesktop} = useMediaQuery();
     return ((isTablet ||isDesktop)  ?
-        <header className="w-dvw lg:inline-flex py-[30px] bg-white flex-col justify-start items-center gap-5 ">
+        <header className="w-dvw md:inline-flex py-[30px] bg-white flex-col justify-start items-center gap-5 ">
             <div className="min-w-screen-lg min-w-md justify-between items-center inline-flex">
                 <div className="w-[156px] justify-start items-center gap-2.5 flex">
                     <div className=" text-blue-800 text-2xl font-extrabold font-['Montserrat']">MEDSTORE</div>
