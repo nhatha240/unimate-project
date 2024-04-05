@@ -1,3 +1,9 @@
+.header{
+  display: none;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: none;
+}
 
 .mobile-header{
   .mobile-banner{

@@ -11,10 +11,9 @@ import React from 'react';
 import {black} from "next/dist/lib/picocolors";
 
 export default function MobileHeader() {
-
     return (
-        <>
-            <div className="mobile-header">
+        <header className="header max-lg:block w-dvw ">
+            <div className="mobile-header w-dvw ">
                     <div className="w-dvw h-[30px] px-5 py-2.5 bg-blue-900 justify-start items-center gap-2.5 inline-flex mobile-banner">
                         <div className="justify-center items-center gap-1.5 flex">
                             <div className="w-3.5 h-3.5 relative"><Image alt={`menu`} src={Shield} width={32} height={32}/></div>
@@ -25,8 +24,8 @@ export default function MobileHeader() {
                             </div>
                         </div>
                 </div>
-                <div className={`mobile-header`}>
-                    <div className="w-[430px] h-32 py-6 flex-col justify-start items-center gap-3 inline-flex">
+                <div className="mobile-header w-dvw flex items-center justify-center">
+                    <div className="w-full h-32 py-6 flex-col justify-start items-center gap-3 inline-flex">
                         <div className="w-[430px] px-5 justify-between items-center inline-flex">
                             <div className="text-blue-500 text-base font-extrabold font-['Montserrat']">MEDSTORE</div>
                             <div className="justify-start items-center gap-6 flex">
@@ -44,7 +43,6 @@ export default function MobileHeader() {
                     </div>
                 </div>
             </div>
-
             <div
                 className={`w-dvw h-20 px-5 py-6 bg-[#223680] justify-between items-center inline-flex fixed bottom-0`}>
                 <a href="#"><Image alt={`menu`} src={menu} width={32} height={32}></Image></a>
@@ -53,6 +51,6 @@ export default function MobileHeader() {
                 <a href="#"><Image alt={`cart`} src={cartLine} width={32} height={32}></Image></a>
                 <a href="#"><Image src={homeLine} alt={`home`} width={32} height={32}></Image></a>
             </div>
-        </>
+        </header>
     );
 }
