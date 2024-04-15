@@ -4,7 +4,12 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import React from "react";
-const JosefinSans = Josefin_Sans({ subsets: ["vietnamese"] });
+const JosefinSans = Josefin_Sans({
+  weight: ['400', '700'],
+  style: ['normal', 'italic'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
