@@ -6,7 +6,11 @@ const nextConfig = {
     sassOptions: {
         includePaths: [path.join("@", 'styles')],
     },
-    ignoreDuringBuilds: true,
+    eslint: {
+        // Warning: This allows production builds to successfully complete even if
+        // your project has ESLint errors.
+        ignoreDuringBuilds: true,
+    },
     // experimental: {
     //     serverActions: {
     //       allowedOrigins: ['my-proxy.com', '*.my-proxy.com'],
